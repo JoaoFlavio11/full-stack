@@ -1,0 +1,10 @@
+import { Router } from "express";
+import { TableSessionsController } from "../controllers/tablesSessionsController";
+
+export const tablesSessionsRoutes = Router();
+
+const tablesSessionsController = new TableSessionsController()
+
+tablesSessionsRoutes.get("/", tablesSessionsController.index)
+tablesSessionsRoutes.post("/", tablesSessionsController.create)
+tablesSessionsRoutes.patch("/:id", tablesSessionsController.update)
