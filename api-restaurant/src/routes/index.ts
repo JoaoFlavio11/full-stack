@@ -2,11 +2,11 @@ import { Router } from "express";
 import { productsRoutes } from "./productsRoutes";
 import { tableRoutes } from "./tableRoutes";
 import { tablesSessionsRoutes } from "./tablesSessionsRoutes";
+import { orderRoutes } from "./ordersRoutes";
 
-const routes = Router()
+export const routes = Router()
 
 routes.use("/products", productsRoutes)
 routes.use("/tables", tableRoutes)
 routes.use("/tables-sessions", tablesSessionsRoutes)
-
-export {routes}
+routes.use("/orders", ordersRoutes)
