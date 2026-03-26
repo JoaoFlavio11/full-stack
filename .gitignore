@@ -2,11 +2,12 @@
 node_modules/
 jspm_packages/
 
-# Variáveis de ambiente (Contém senhas e chaves de API)
-.env
-.env.test
-.env.production
+# prisma
+/src/generated/prisma
+
+#variáveis de ambiente
 .env.local
+.env.test
 
 # Logs
 npm-debug.log*
