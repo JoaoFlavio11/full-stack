@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2023"],
+    "paths": {
+      "@/*": ["./src/*"] // Remova o ./ aqui se baseUrl for "."
+    },
+    "module": "NodeNext", // Recomendado para ES2022
+    "moduleResolution": "NodeNext", // Garante que ele entenda os paths
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true
+  }
+}
