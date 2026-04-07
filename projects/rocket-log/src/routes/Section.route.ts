@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { SessionController } from "@/controllers/SectionsControllers.js";
+import { SessionController } from "@/controllers/Sections.controller.js";
 
 const sessionRoutes = Router();
 const sessionController = new SessionController();
