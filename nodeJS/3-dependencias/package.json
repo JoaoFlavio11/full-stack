@@ -1,0 +1,10 @@
+{
+  "name": "3-dependencias",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {},
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
